@@ -1,0 +1,16 @@
+#NavBarEle{
+    background-image: url("/images/header-background-png-2.png" ) ;
+    background-size: 100%;
+    height: 100px;
+}
+.menu{
+    color: blanchedalmond;
+    width: 100%;
+}
+
+.LinkEle{
+    text-decoration-color: none;
+    color: antiquewhite;
+    font-family: cursive;
+  
+}

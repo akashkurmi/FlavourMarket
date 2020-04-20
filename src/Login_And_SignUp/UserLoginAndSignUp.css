@@ -1,0 +1,35 @@
+.LoginPage{
+    color: white;
+}
+.InputBox{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    border-bottom: solid grey 2px;
+    font-family: cursive;
+    transition: border-bottom 0.4s ease-in-out;
+    
+}
+.InputBox:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid tomato 2px;
+    outline: none;
+    
+}
+.label{
+    align-items: center;
+    text-align: center;
+}
+.SubmitBtn{
+    width: 100%;
+}
+
+/* .InputBox:focus ~ .label,
+.InputBox:valid ~ .label{
+	top:-12px;
+	font-size:12px;
+	
+} */

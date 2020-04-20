@@ -1,0 +1,20 @@
+.NavBarClass{
+  z-index: 1;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+.SideNav{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.9);
+}
+.G{
+  border-top-right-radius: 10px;
+
+  background-color: rgba(250, 250, 250, 0.9);
+ 
+}
+.Gape{
+  height:  400px;
+}

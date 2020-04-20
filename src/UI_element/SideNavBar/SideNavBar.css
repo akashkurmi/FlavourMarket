@@ -1,0 +1,11 @@
+.NavLink:hover{
+    text-decoration: none;
+    width:100%;
+    color: cornsilk;
+    background-color: #483d8b;
+    font-family: cursive;
+    
+}
+.NavLink.InsideLink{
+    color: cornsilk;
+}

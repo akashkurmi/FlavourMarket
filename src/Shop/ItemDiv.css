@@ -1,0 +1,75 @@
+.division{
+    border: solid 0.1px black;
+    width: 250px;
+    height: 270px;
+    padding: 0.5px;
+    
+    
+}
+.ProductTitle{
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+.column{
+    font-family: cursive;
+    padding: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+  
+}
+
+h5{
+    float: right;
+}
+
+
+
+.Image{
+    width: 100%;
+    height: 80%;
+}
+.ImageDiv{
+    width:100%;
+    height: 250px;
+}
+.Button{
+    float: left;
+
+}
+.CardDiv{
+    text-decoration: none;
+}
+
+.CardDiv:hover{
+    background: rgba(#E1332D, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+  
+ 
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+     
+    /* backface-visibility: hidden; */
+    border-color: rgb(17, 13, 13);
+    /* transition: width 350ms ease-in-out; */
+    /* width: 70%; */
+}
+.MRP{
+   float:right;
+   font-family: fantasy;
+   color: #E1332D;
+}
+.CardText{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgrey;
+    font-size: 15px;
+ }
+ .Link{
+     text-decoration: solid;
+ }
+ 
