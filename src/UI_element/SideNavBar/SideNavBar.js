@@ -16,7 +16,7 @@ class SideNavBar extends Component {
                 )})}
             </NavItem>
           </Nav>
-          <hr />
+          {/* <hr /> */}
           {/* <p>Link based</p>
           <Nav vertical>
         <NavItem>

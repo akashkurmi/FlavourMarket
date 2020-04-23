@@ -9,10 +9,10 @@ class Items extends Component {
     }
     componentDidMount(){
         // console.log("once")
-        axios.get("../db.json/posts").then(res=>{
+        axios.get("db.json").then(res=>{
         this.setState({
-            posts:res.data,
-            filterPost:res.data
+            posts:res.data.posts,
+            filterPost:res.data.posts
         })    
     })  
     }

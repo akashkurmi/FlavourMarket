@@ -3,7 +3,7 @@ import './App.css';
 import  NavigationBar from './NavBar/navbar'
 import {Row,Col,Container} from 'react-bootstrap';
 import SideNav from './SideNav/sidenav';
-import {Route,Switch,useParams} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import Items from './Shop/Items';
 
 
@@ -15,6 +15,7 @@ import UserSignUp from './Login_And_SignUp/UserSignUp';
 import CarouselEle from './UI_element/Carousel/CarouselEle';
 import AUI from './UI_element/AUI/AUI';
 import {connect} from 'react-redux'
+import Loading from './UI_element/Loading/Loading';
 
 // import Recipes from './Recipes/Recipes'; 
 const Blog=lazy( ()=>import( './Blog/blog'));
@@ -26,9 +27,10 @@ const Recipes=lazy(()=>import('./Recipes/Recipes'))
 class App extends Component {
   state={
     Login:false,
-    SignUp:false
+    SignUp:false,
+    path:null
   }
- 
+  
   LoginHandler=()=>{
  
     this.setState({
@@ -53,8 +55,8 @@ class App extends Component {
     })
   }
 
+
   render(){
-    // console.log(useParams)
   return (
     <div className="App">
       <Container  >
@@ -80,14 +82,13 @@ class App extends Component {
       </Row>
     
      <Row className="Row">
-      {/* {window.location.href==='http://localhost:3000/Recipes'?null: */}
       <Col className="SideNav" sm={2}>
         <SideNav Ele="Type"></SideNav>
         <SideNav Ele="MRP"></SideNav>
       </Col>
 
       <Col className="G">
-         <Suspense fallback={<div>Loading...</div>}>
+         <Suspense fallback={<div><Loading></Loading></div>}>
          <Switch>
          <Route path="/items/:id/:Sid" component={Items} ></Route>
          <Route path="/FullPage/:id" component={FullPost}></Route>

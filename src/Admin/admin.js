@@ -6,6 +6,7 @@ class Admin extends Component {
         return (
             <div>
                 <Container className="FormClass">
+                 
                 <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>

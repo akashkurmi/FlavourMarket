@@ -64,7 +64,7 @@ class Recipes extends PureComponent {
 			<div className="row">
 			<div className="col-lg-4 col-md-6">
 					<div className="recipe">
-						<img src="images\1_96b63944-b272-4fe4-b6c6-cad1165ab88b_grande6683.jpg" alt="" width="320px" height="220px"></img>
+						<img src="images/1_96b63944-b272-4fe4-b6c6-cad1165ab88b_grande6683.jpg" alt="" width="320px" height="220px"></img>
 						<div className="recipe-info-warp">
 							<div className="recipe-info">
 								<h3>Traditional Pizza</h3>
@@ -81,7 +81,7 @@ class Recipes extends PureComponent {
 				</div>
 				<div className="col-lg-4 col-md-6">
 					<div className="recipe">
-						<img src="images\56494483_162695328065711_4267480339786358474_n.jpg" alt=""></img>
+						<img src="images/56494483_162695328065711_4267480339786358474_n.jpg" alt=""></img>
 						<div className="recipe-info-warp">
 							<div className="recipe-info">
 								<h3>Traditional Pizza</h3>

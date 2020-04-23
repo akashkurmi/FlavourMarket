@@ -19,23 +19,23 @@ const Footer = () => {
             </form>
             <hr/>
             <h4>Find Us On:-</h4><br/>
-            &nbsp;&nbsp;<a href="#"><img src="/Images/insta.png" height="35" width ="35"></img></a>&nbsp;&nbsp;
-            &nbsp;&nbsp;<a href="#"><img src="/Images/fb.png" height="35" width ="35"></img></a>&nbsp;&nbsp;
-            &nbsp;&nbsp;<a href="#"><img src="/Images/yt.png" height="35" width ="35"></img></a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="/"><img src="/Images/insta.png" alt="" height="35" width ="35"></img></a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="/"><img src="/Images/fb.png" alt="" height="35" width ="35"></img></a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="/"><img src="/Images/yt.png" alt="" height="35" width ="35"></img></a>&nbsp;&nbsp;
             <br/>
           </MDBCol>
           <MDBCol md="4">
             <h4>About Flavour Market</h4>
             <br/>
-            <h6><a href="#">Why Us?</a></h6>
+            <h6><a href="/">Why Us?</a></h6>
             <br/>
-            <h6><a href="#">FAQ</a></h6>
+            <h6><a href="/">FAQ</a></h6>
             <br/>
-            <h6><a href="#">Terms of Use</a></h6>
+            <h6><a href="/">Terms of Use</a></h6>
             <br/>
-            <h6><a href="#">Privacy Policy</a></h6>
+            <h6><a href="/">Privacy Policy</a></h6>
             <br/>
-            <h6><a href="#">Refund Policy</a></h6>
+            <h6><a href="/">Refund Policy</a></h6>
             <br/>
           </MDBCol>
           <MDBCol md="4">
