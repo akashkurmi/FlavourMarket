@@ -4,7 +4,7 @@ import  NavigationBar from './NavBar/navbar'
 import {Row,Col,Container} from 'react-bootstrap';
 import SideNav from './SideNav/sidenav';
 import {Route,Switch} from 'react-router-dom';
-import Items from './Shop/Items';
+// import Items from './Shop/Items';
 
 
 import Footer from './footer/footer';
@@ -16,8 +16,11 @@ import CarouselEle from './UI_element/Carousel/CarouselEle';
 import AUI from './UI_element/AUI/AUI';
 import {connect} from 'react-redux'
 import Loading from './UI_element/Loading/Loading';
+// import CheckoutPage from './UI_element/Order/CheckoutPage/CheckoutPage';
 
 // import Recipes from './Recipes/Recipes'; 
+const Items =lazy(()=>import('./Shop/Items'))
+const CheckoutPage=lazy(()=>import('./UI_element/Order/CheckoutPage/CheckoutPage'))
 const Blog=lazy( ()=>import( './Blog/blog'));
 const FullPost=lazy( ()=>import( './UI_element/FullPost/FullPost'));
 const Admin=lazy( ()=>import( './Admin/admin'));
@@ -98,7 +101,8 @@ class App extends Component {
          <Route path="/" exact component={Items}></Route>
          <Route path="/FMadmin/login" component={Admin}></Route>
        <Route path="/FMadmin/NewProduct" component={NewProduct}></Route>
-  
+       <Route path="/Checkout" component={CheckoutPage}></Route>
+         
         </Switch>
         </Suspense>
        

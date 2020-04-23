@@ -1,0 +1,35 @@
+.Checkout{
+   
+    padding: 20px;
+}
+.id{
+    background-color: aqua;
+    width: 15%;
+}
+.desc{
+    background-color: bisque;
+    width: 30%;
+}
+.weight{
+
+}
+.price{
+
+}
+.qty{
+
+}
+.total{
+
+}
+.cross{
+
+}
+.thead{
+    background-color: antiquewhite;
+}
+
+.tablerow{
+    height: 100px;
+    text-align: center;   
+}

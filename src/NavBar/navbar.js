@@ -21,12 +21,13 @@ class NavigationBar extends Component{
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-success">Search</Button>
     </Form>
-    
+    <Link to="/Checkout">
+    <img src="images/cart.png" alt="6758011_preview.png" width="40px" height="40px"></img>
+      <p style={{backgroundColor:"red", color:"white",borderRadius:"30%"}}>{this.props.cart }</p>
+      </Link>
     </Navbar.Collapse>
     {this.props.UserName?
      <div>
-      <img src="https://i.dlpng.com/static/png/6758011_preview.png" alt="6758011_preview.png" width="40px" height="40px"></img>
-      <p>{this.props.cart }</p>
       <br></br>
        {this.props.UserName }
        <Button variant="outline-danger" onClick={()=>this.props.User(this.state)}>LogOut</Button>
