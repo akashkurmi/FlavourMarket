@@ -9,8 +9,6 @@ import {Route,Switch} from 'react-router-dom';
 
 import Footer from './footer/footer';
 import Modal from './UI_element/Modal/Modal';
-import UserLogin from './Login_And_SignUp/UserLogin';
-import UserSignUp from './Login_And_SignUp/UserSignUp';
 
 import CarouselEle from './UI_element/Carousel/CarouselEle';
 import AUI from './UI_element/AUI/AUI';
@@ -19,6 +17,11 @@ import Loading from './UI_element/Loading/Loading';
 // import CheckoutPage from './UI_element/Order/CheckoutPage/CheckoutPage';
 
 // import Recipes from './Recipes/Recipes'; 
+// import UserLogin from './Login_And_SignUp/UserLogin';
+// import UserSignUp from './Login_And_SignUp/UserSignUp';
+const UserLogin = lazy(()=>import( './Login_And_SignUp/UserLogin'))
+const UserSignUp = lazy(()=>import( './Login_And_SignUp/UserSignUp'))
+
 const Items =lazy(()=>import('./Shop/Items'))
 const CheckoutPage=lazy(()=>import('./UI_element/Order/CheckoutPage/CheckoutPage'))
 const Blog=lazy( ()=>import( './Blog/blog'));
@@ -51,7 +54,6 @@ class App extends Component {
   }
 
   LoginCancelHandler=()=>{
- 
     this.setState({
       Login:false,
       SignUp:false
@@ -68,13 +70,19 @@ class App extends Component {
       <NavigationBar Login={this.LoginHandler} SignUp={this.SignUpHandler}></NavigationBar>
       </Container>
 
-      <AUI flag={this.props.UserName}>
-      <Modal show={this.state.Login} modelClose={this.LoginCancelHandler} >
+      <AUI flag={this.props.UserName} >
+     
+      <Modal show={this.state.Login} modalClose={this.LoginCancelHandler} >
+      <Suspense fallback={<div>Loading...</div>}>
       <UserLogin></UserLogin>
+      </Suspense>
       </Modal>
-      
-      <Modal show={this.state.SignUp} modelClose={this.LoginCancelHandler} top="15%" >
+      </AUI>
+      <AUI flag={this.props.UserName}>
+      <Modal show={this.state.SignUp} modalClose={this.LoginCancelHandler} top="15%" >
+        <Suspense fallback={<div>Loading...</div>}>
         <UserSignUp></UserSignUp>
+        </Suspense>
       </Modal>
       </AUI>      
 

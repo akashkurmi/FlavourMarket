@@ -1,27 +1,23 @@
 import React from 'react'
 import './Modal.css';
-import Backdrop from '../Backdrop/Backdrop';
-import { Button } from 'react-bootstrap';
-import AUI from '../AUI/AUI';
+import { Modal } from 'react-bootstrap';
 
-const Modal=(props)=>{
+const ModalUI=(props)=>{
     return (
     <div>
-    <AUI>
-            <Backdrop show={props.show}></Backdrop>  
-            <div className="Modal"
-                 style={{
-                     transform:props.show ? 'translateY(0)':'translateY(-150vh)',
-                     top:props.top
-                 }}>
-                     <Button variant="danger" onClick={props.modelClose} style={{float:'right'}}>X</Button>
-                     <hr></hr>
+    <Modal style={{border:"none"}} show={props.show} onHide={props.modalClose} closeButton>
+            {/* <Backdrop show={props.show}></Backdrop>   */}
+           
+            <div className="Modal" closeButton>
+             <Modal.Header closeButton></Modal.Header>
+                     {/* <Button variant="danger" onClick={props.modelClose} >X</Button> */}
+                     {/* <hr></hr> */}
       
                 {props.children}
             </div>
-            </AUI>
+            </Modal>
             </div>
         )
     }
 
-export default Modal;
+export default ModalUI;
