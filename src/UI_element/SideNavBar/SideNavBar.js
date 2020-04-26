@@ -8,7 +8,7 @@ class SideNavBar extends Component {
     render() {
         return (
         <div >
-        <Nav vertical hover >
+        <Nav vertical  >
             <NavItem>
               {this.props.Types.map(ele=>{
                 return(

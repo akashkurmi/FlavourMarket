@@ -2,30 +2,27 @@ import React, { Component, lazy, Suspense } from 'react';
 import './App.css';
 import  NavigationBar from './NavBar/navbar'
 import {Row,Col,Container} from 'react-bootstrap';
-import SideNav from './SideNav/sidenav';
 import {Route,Switch} from 'react-router-dom';
-// import Items from './Shop/Items';
-
-
 import Footer from './footer/footer';
 import Modal from './UI_element/Modal/Modal';
-
-import CarouselEle from './UI_element/Carousel/CarouselEle';
 import AUI from './UI_element/AUI/AUI';
 import {connect} from 'react-redux'
 import Loading from './UI_element/Loading/Loading';
-// import CheckoutPage from './UI_element/Order/CheckoutPage/CheckoutPage';
 
+// import CarouselEle from './UI_element/Carousel/CarouselEle';
+// import SideNav from './SideNav/sidenav';
+// import CheckoutPage from './UI_element/Order/CheckoutPage/CheckoutPage';
+// import Items from './Shop/Items';
+// import Shop from './Shop/Shop';
 // import Recipes from './Recipes/Recipes'; 
 // import UserLogin from './Login_And_SignUp/UserLogin';
 // import UserSignUp from './Login_And_SignUp/UserSignUp';
+
+const Shop =lazy(()=>import('./Shop/Shop'));
 const UserLogin = lazy(()=>import( './Login_And_SignUp/UserLogin'))
 const UserSignUp = lazy(()=>import( './Login_And_SignUp/UserSignUp'))
-
-const Items =lazy(()=>import('./Shop/Items'))
 const CheckoutPage=lazy(()=>import('./UI_element/Order/CheckoutPage/CheckoutPage'))
 const Blog=lazy( ()=>import( './Blog/blog'));
-const FullPost=lazy( ()=>import( './UI_element/FullPost/FullPost'));
 const Admin=lazy( ()=>import( './Admin/admin'));
 const NewProduct=lazy( ()=>import( './Admin/NewProdcut/NewProduct'));
 const Recipes=lazy(()=>import('./Recipes/Recipes'))
@@ -86,7 +83,7 @@ class App extends Component {
       </Modal>
       </AUI>      
 
-      <Row>
+      {/* <Row>
         <Col className="Gape"> 
         <CarouselEle></CarouselEle>
         </Col>
@@ -98,25 +95,24 @@ class App extends Component {
         <SideNav Ele="MRP"></SideNav>
       </Col>
 
-      <Col className="G">
+      <Col className="G"> */}
          <Suspense fallback={<div><Loading></Loading></div>}>
          <Switch>
-         <Route path="/items/:id/:Sid" component={Items} ></Route>
-         <Route path="/FullPage/:id" component={FullPost}></Route>
+         {/* <Route path="/items/:id/:Sid" component={Items} ></Route> */}
+         {/* <Route path="/FullPage/:id" component={FullPost}></Route> */}
          <Route path="/Blog" component={Blog}></Route>
          {/* <Route path="/Recipes" render={()=>(<Suspense fallback={<div>Loading...</div>}><Recipes></Recipes></Suspense>)}></Route> */}
          <Route path="/Recipes" component={Recipes}></Route>
-         <Route path="/" exact component={Items}></Route>
          <Route path="/FMadmin/login" component={Admin}></Route>
        <Route path="/FMadmin/NewProduct" component={NewProduct}></Route>
        <Route path="/Checkout" component={CheckoutPage}></Route>
+         <Route path="/" exact component={Shop}></Route>
          
         </Switch>
         </Suspense>
        
-      </Col>
-    
-  </Row>
+      {/* </Col>
+  </Row> */}
   
   <Row>
     <Col>

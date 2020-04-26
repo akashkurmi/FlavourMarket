@@ -6,11 +6,12 @@ class Recipes extends PureComponent {
     
     render() {
         return (
-            <div className="Page">
-                {/* <h1>All Recipes</h1> */}
+            <div className="blurBackground">
+            
+			    {/* <h1>All Recipes</h1> */}
 
                 {/* <!-- Hero section --> */}
-	<section className="page-top-section set-bg" data-setbg="img/page-top-bg.jpg">
+	<section className="page-top-section set-bg"  style={{backgroundImage:"url(images/single-big.jpg)",backgroundSize: "cover"}}>
 		<div className="container">
 			<h2>Recipe</h2>
 		</div>

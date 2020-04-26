@@ -8,10 +8,10 @@ class CarouselEle extends Component {
         return (
             <div>
 <Carousel style={{height:"400px"}}>
-  <Carousel.Item >
+  <Carousel.Item style={{height: "-webkit-fill-available"}}>
     <img
-      className="d-block w-100"
-      src="/images/56494483_162695328065711_4267480339786358474_n.jpg"
+      className="d-block w-100" 
+      src="/images/56494483_162695328065711_4267480339786358474_n.jpg" height="100%"
       alt="First slide"
     />
     <Carousel.Caption >
