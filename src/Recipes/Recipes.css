@@ -814,9 +814,9 @@ ol {
   Gallery Section
 ---------------------*/
 
-.gallery-slider .gs-item {
+/* .gallery-slider .gs-item {
 	height: 320px;
-}
+} */
 
 /*------------------
   Footer Section
@@ -1381,7 +1381,7 @@ ol {
 		margin-right: 40px;
 	}
 	.gallery-slider .gs-item {
-		height: 235px;
+		/* height: 235px; */
 	}
 	.hero-slide-item .hs-text {
 		-webkit-transform: scale(0.8);

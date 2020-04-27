@@ -106,7 +106,7 @@ class App extends Component {
          <Route path="/FMadmin/login" component={Admin}></Route>
        <Route path="/FMadmin/NewProduct" component={NewProduct}></Route>
        <Route path="/Checkout" component={CheckoutPage}></Route>
-         <Route path="/" exact component={Shop}></Route>
+         <Route path="/" component={Shop}></Route>
          
         </Switch>
         </Suspense>

@@ -1,6 +1,6 @@
 #NavBarEle{
     background-image: url("/images/header-background-png-2.png" ) ;
-    background-size: 100%;
+    background-size: "cover";
     height: 100px;
 }
 .menu{

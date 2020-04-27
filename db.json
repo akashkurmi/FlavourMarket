@@ -256,18 +256,9 @@
       "Discount": "12"
     }
   ],
-  "Types": [
-    "SPICES",
-    "HERBS",
-    "Seasonings",
-    "Extracts"
-  ],
-  "Categories": [
-    "Spices",
-    "Herbs",
-    "Seasonings",
-    "Extracts"
-  ],
+ 
+
+
   "cart": [
     {
       "productId": 1,
