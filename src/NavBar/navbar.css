@@ -14,3 +14,21 @@
     font-family: cursive;
   
 }
+
+
+
+#searchbox {
+    width: 80%;
+    border-radius: 400px;
+  } 
+  #searchbutton{
+      border-radius:400px;
+      background-color: blue;
+      color:white ;
+      border-color: none;
+      outline-color: none;
+  }
+  #searchbutton :hover {
+    background-color: rgb(6, 6, 133); 
+    color: white;
+  }

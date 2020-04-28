@@ -76,7 +76,7 @@ class App extends Component {
       </Modal>
       </AUI>
       <AUI flag={this.props.UserName}>
-      <Modal show={this.state.SignUp} modalClose={this.LoginCancelHandler} top="15%" >
+      <Modal show={this.state.SignUp} modalClose={this.LoginCancelHandler} top="10%" >
         <Suspense fallback={<div>Loading...</div>}>
         <UserSignUp></UserSignUp>
         </Suspense>

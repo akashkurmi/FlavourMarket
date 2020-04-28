@@ -7,10 +7,10 @@ class SideNav extends Component{
   }
 
   componentDidMount(){
-    axios.get("db.json").then(res=>{
+    axios.get("http://localhost:3001/posts").then(res=>{
       // console.log(res)
     this.setState({
-      Types:[...new Set(res.data.posts.map(x=>x[this.props.Ele]))]
+      Types:[...new Set(res.data.map(x=>x[this.props.Ele]))]
     })    
   });
   }

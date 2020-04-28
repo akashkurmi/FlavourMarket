@@ -18,7 +18,7 @@ class UserSignUp extends Component {
 
 signUpSubmit=()=>{
 
-    axios.post("../user.json",this.state).then(res=>{console.log(res)})
+    axios.post("http://localhost:3001/user",this.state).then(res=>{console.log(res)})
 }
 
     render() {

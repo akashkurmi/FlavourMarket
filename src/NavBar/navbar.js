@@ -12,15 +12,27 @@ class NavigationBar extends Component{
   render(){
       console.log(this.props.cart+"-------------")
         return(
-<div>
+
+<html>
+            <head>
+              <title>
+
+              </title>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+            </head>
+          <body>
+          <div>
 <Navbar bg="light" expand="sm"  sticky="top" id="NavBarEle">
-  <Navbar.Brand href="#home" className="LinkEle">Flavor=Market</Navbar.Brand>
+  <Navbar.Brand href="#home" className="LinkEle"><img src='./images/LOGO.png' alt=""  height="50%" width="50%" ></img></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
+    <pre>                    </pre>
     <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
+    <FormControl type="text" id="searchbox" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-success" id="searchbutton"><i class="fa fa-search"></i>  </Button> 
     </Form>
+
+    <pre>                       </pre>
     <Link to="/Checkout">
     <img src="images/cart.png" alt="6758011_preview.png" width="40px" height="40px"></img>
       <p style={{backgroundColor:"red", color:"white",borderRadius:"30%"}}>{this.props.cart }</p>
@@ -53,7 +65,10 @@ class NavigationBar extends Component{
      <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
    </NavDropdown>
  </Nav>
- </div>    )
+ </div> 
+ 
+ </body>
+ </html>   )
     }
 }
 const StateHandler=(state)=>{

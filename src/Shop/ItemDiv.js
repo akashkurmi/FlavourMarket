@@ -16,22 +16,25 @@ class ItemDiv extends Component {
             <div>
                 <Row>
                     {this.props.itemsdetail.map(p=>{
-                        return(<Link className="Link" to={"/FullPage/"+p.id} key={p.id}>
+                        return(<div>
+                        {/* // <Link className="Link" to={"/FullPage/"+p.id} key={p.id}> */}
                             <Col  className="column" sm={4} >
                                 {/* <div className="division">
                                     <div className="Image"><img src={"/images/"+p.source} width="100%" height="100%"></img>
-                                        </div>
-                                <span className="ProductTitle">{p.Product}</span>
-                               
-                                <h5>{p.MRP}$</h5>
-                                </div> */}
+                                    </div>
+                                    <span className="ProductTitle">{p.Product}</span>
+                                    
+                                    <h5>{p.MRP}$</h5>
+                                  </div> */}
                                   <Card className="CardDiv" style={{width:'18rem'}}>
             <Card.Img className="ImageDiv" variant="top" src={"/images/"+p.source} />
             <Card.Body>
               <Card.Title style={{height:"10px"}}>
+                <Link className="Link" to={"/FullPage/"+p.id} key={p.id}>
                 {p.Product}
                 <p className="MRP">{p.MRP}$</p>
                 <p className="CardText">{p.Type}</p>
+                </Link>
                 {/* <p className="CardText">{p.Discount}</p> */}
                 </Card.Title>
               <Card.Text>
@@ -45,7 +48,8 @@ class ItemDiv extends Component {
           </Card>
           
                             </Col>
-                            </Link>
+                            {/* // </Link> */}
+                            </div>
                         )
                     })}
                     
